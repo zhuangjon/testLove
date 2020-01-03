@@ -11,11 +11,12 @@ public class TestHelloWorld {
 		HelloWorld helloWorld = (HelloWorld) act.getBean(HelloWorld.class);
 		//调用hello()方法
 		//helloWorld.hello();
-		
 		System.out.println(helloWorld);
 		
 		
 		String ss = "我在本地修改了代码";
 		System.out.println(ss);
+		String s = "我修改了代码";
+		System.out.println(s);
 	}
 }
