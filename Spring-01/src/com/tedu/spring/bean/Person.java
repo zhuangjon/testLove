@@ -1,9 +1,11 @@
 package com.tedu.spring.bean;
 
+import java.util.List;
+
 public class Person {
 	private String username;
 	private Integer age;
-	private Car car;
+	private List<Car> cars;
 	public String getUsername() {
 		return username;
 	}
@@ -16,23 +18,24 @@ public class Person {
 	public void setAge(Integer age) {
 		this.age = age;
 	}
-	public Car getCar() {
-		return car;
+	public List<Car> getCars() {
+		return cars;
 	}
-	public void setCar(Car car) {
-		this.car = car;
+	public void setCars(List<Car> cars) {
+		this.cars = cars;
 	}
-	public Person(String username, Integer age, Car car) {
+	public Person(String username, Integer age, List<Car> cars) {
 		super();
 		this.username = username;
 		this.age = age;
-		this.car = car;
+		this.cars = cars;
 	}
 	public Person() {
 		super();
 	}
 	@Override
 	public String toString() {
-		return "Person [username=" + username + ", age=" + age + ", car=" + car + "]";
+		return "Person [username=" + username + ", age=" + age + ", cars=" + cars + "]";
 	}
+	
 }
