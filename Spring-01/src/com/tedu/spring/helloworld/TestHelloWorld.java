@@ -13,5 +13,9 @@ public class TestHelloWorld {
 		//helloWorld.hello();
 		
 		System.out.println(helloWorld);
+		
+		
+		String ss = "我在本地修改了代码";
+		System.out.println(ss);
 	}
 }
